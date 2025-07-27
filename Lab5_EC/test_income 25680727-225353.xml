@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="test_income" project="FactoryProblem" tests="27" started="27" failures="7" errors="0" ignored="0">
+  <testsuite name="sqa.main.test_income" time="0.054" displayname="test_income" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]">
+    <testsuite name="strongRobustECTest(sqa.main.test_income)" time="0.054" displayname="strongRobustECTest(int, int, int, double)" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]">
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.054" dynamicTest="true" displayname="TC1: fan=1000, motor=300, grill=500 =&gt; expected=29000" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#1]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.008" dynamicTest="true" displayname="TC2: fan=1000, motor=300, grill=499 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#2]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.019" dynamicTest="true" displayname="TC3: fan=1000, motor=300, grill=3001 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#3]">
+        <failure>
+          <expected>-1.0</expected>
+          <actual>79020.0</actual>
+          org.opentest4j.AssertionFailedError: Expected Result: ผลที่ควรได้คือ -1 บาท | แต่ Actual Result คือ 79020 บาท | Input: impeller=1000, Motor=300, Cover=3001 ==&gt; expected: &lt;-1.0&gt; but was: &lt;79020.0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1024)&#13;
+	at sqa.main.test_income.strongRobustECTest(test_income.java:50)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.001" dynamicTest="true" displayname="TC4: fan=1000, motor=299, grill=500 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#4]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.002" dynamicTest="true" displayname="TC5: fan=1000, motor=299, grill=499 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#5]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.002" dynamicTest="true" displayname="TC6: fan=1000, motor=299, grill=3001 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#6]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.005" dynamicTest="true" displayname="TC7: fan=1000, motor=801, grill=500 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#7]">
+        <failure>
+          <expected>-1.0</expected>
+          <actual>44030.0</actual>
+          org.opentest4j.AssertionFailedError: Expected Result: ผลที่ควรได้คือ -1 บาท | แต่ Actual Result คือ 44030 บาท | Input: impeller=1000, Motor=801, Cover=500 ==&gt; expected: &lt;-1.0&gt; but was: &lt;44030.0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1024)&#13;
+	at sqa.main.test_income.strongRobustECTest(test_income.java:50)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.003" dynamicTest="true" displayname="TC8: fan=1000, motor=801, grill=499 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#8]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.004" dynamicTest="true" displayname="TC9: fan=1000, motor=801, grill=3001 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#9]">
+        <failure>
+          <expected>-1.0</expected>
+          <actual>94050.0</actual>
+          org.opentest4j.AssertionFailedError: Expected Result: ผลที่ควรได้คือ -1 บาท | แต่ Actual Result คือ 94050 บาท | Input: impeller=1000, Motor=801, Cover=3001 ==&gt; expected: &lt;-1.0&gt; but was: &lt;94050.0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1024)&#13;
+	at sqa.main.test_income.strongRobustECTest(test_income.java:50)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.001" dynamicTest="true" displayname="TC10: fan=999, motor=300, grill=500 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#10]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.002" dynamicTest="true" displayname="TC11: fan=999, motor=300, grill=499 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#11]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.002" dynamicTest="true" displayname="TC12: fan=999, motor=300, grill=3001 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#12]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.002" dynamicTest="true" displayname="TC13: fan=999, motor=299, grill=500 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#13]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.002" dynamicTest="true" displayname="TC14: fan=999, motor=299, grill=499 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#14]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.002" dynamicTest="true" displayname="TC15: fan=999, motor=299, grill=3001 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#15]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.001" dynamicTest="true" displayname="TC16: fan=999, motor=801, grill=500 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#16]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.001" dynamicTest="true" displayname="TC17: fan=999, motor=801, grill=499 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#17]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.002" dynamicTest="true" displayname="TC18: fan=999, motor=801, grill=3001 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#18]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.004" dynamicTest="true" displayname="TC19: fan=5001, motor=300, grill=500 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#19]">
+        <failure>
+          <expected>-1.0</expected>
+          <actual>69010.0</actual>
+          org.opentest4j.AssertionFailedError: Expected Result: ผลที่ควรได้คือ -1 บาท | แต่ Actual Result คือ 69010 บาท | Input: impeller=5001, Motor=300, Cover=500 ==&gt; expected: &lt;-1.0&gt; but was: &lt;69010.0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1024)&#13;
+	at sqa.main.test_income.strongRobustECTest(test_income.java:50)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.003" dynamicTest="true" displayname="TC20: fan=5001, motor=300, grill=499 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#20]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.003" dynamicTest="true" displayname="TC21: fan=5001, motor=300, grill=3001 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#21]">
+        <failure>
+          <expected>-1.0</expected>
+          <actual>119030.0</actual>
+          org.opentest4j.AssertionFailedError: Expected Result: ผลที่ควรได้คือ -1 บาท | แต่ Actual Result คือ 119030 บาท | Input: impeller=5001, Motor=300, Cover=3001 ==&gt; expected: &lt;-1.0&gt; but was: &lt;119030.0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1024)&#13;
+	at sqa.main.test_income.strongRobustECTest(test_income.java:50)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.001" dynamicTest="true" displayname="TC22: fan=5001, motor=299, grill=500 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#22]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.002" dynamicTest="true" displayname="TC23: fan=5001, motor=299, grill=499 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#23]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.001" dynamicTest="true" displayname="TC24: fan=5001, motor=299, grill=3001 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#24]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.004" dynamicTest="true" displayname="TC25: fan=5001, motor=801, grill=500 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#25]">
+        <failure>
+          <expected>-1.0</expected>
+          <actual>84040.0</actual>
+          org.opentest4j.AssertionFailedError: Expected Result: ผลที่ควรได้คือ -1 บาท | แต่ Actual Result คือ 84040 บาท | Input: impeller=5001, Motor=801, Cover=500 ==&gt; expected: &lt;-1.0&gt; but was: &lt;84040.0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1024)&#13;
+	at sqa.main.test_income.strongRobustECTest(test_income.java:50)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.001" dynamicTest="true" displayname="TC26: fan=5001, motor=801, grill=499 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#26]"/>
+      <testcase name="strongRobustECTest" classname="sqa.main.test_income" time="0.004" dynamicTest="true" displayname="TC27: fan=5001, motor=801, grill=3001 =&gt; expected=-1" parameters="int,int,int,double" uniqueid="[engine:junit-jupiter]/[class:sqa.main.test_income]/[test-template:strongRobustECTest(int, int, int, double)]/[test-template-invocation:#27]">
+        <failure>
+          <expected>-1.0</expected>
+          <actual>134060.0</actual>
+          org.opentest4j.AssertionFailedError: Expected Result: ผลที่ควรได้คือ -1 บาท | แต่ Actual Result คือ 134060 บาท | Input: impeller=5001, Motor=801, Cover=3001 ==&gt; expected: &lt;-1.0&gt; but was: &lt;134060.0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:86)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1024)&#13;
+	at sqa.main.test_income.strongRobustECTest(test_income.java:50)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
